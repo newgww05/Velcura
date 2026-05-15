@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nano-Silver Medical Antibacterial Dressing – Velcura</title>
+<meta name="description" content="Velcura Nano-Silver Medical Antibacterial Dressing provides powerful antimicrobial protection for wounds.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal:#1A7A80;
+  --teal-dark:#0F5C62;
+  --teal-light:#E6F4F5;
+  --teal-mid:#2A9DA6;
+  --navy:#0D2B3E;
+  --white:#fff;
+  --off:#F7FAFB;
+  --g50:#EEF3F5;
+  --g200:#C5D4D9;
+  --g400:#8AAAB2;
+  --g600:#4D6B75;
+  --g800:#1E3540;
+  --font-d:'Playfair Display',Georgia,serif;
+  --font-b:'DM Sans',system-ui,sans-serif;
+}
+body{font-family:var(--font-b);color:var(--g800);background:var(--white);line-height:1.7;font-size:15px}
+
+/* ── TOP BAR ── */
+.top-bar{background:var(--teal-dark);color:rgba(255,255,255,0.85);font-size:0.78rem;text-align:center;padding:7px 5%;letter-spacing:0.04em}
+.top-bar a{color:#7FD8DC;text-decoration:none;font-weight:600}
+
+/* ── NAV ── */
+nav{background:var(--white);border-bottom:1px solid var(--g50);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(13,43,62,0.07)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:44px;width:44px;object-fit:contain}
+.logo-text .brand{font-family:var(--font-d);font-size:1.18rem;color:var(--navy);font-weight:700}
+.logo-text .sub{font-size:0.6rem;letter-spacing:0.13em;color:var(--g400);text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:0}
+.nav-links > li{list-style:none;position:relative}
+.nav-links > li > a{display:block;padding:0 16px;line-height:72px;color:var(--g600);font-size:0.85rem;font-weight:500;text-decoration:none;white-space:nowrap;transition:color .2s}
+.nav-links > li > a:hover{color:var(--teal)}
+.nav-links > li:hover .dropdown{display:block}
+.dropdown{display:none;position:absolute;top:72px;left:0;background:var(--white);border:1px solid var(--g50);border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.1);padding:10px 0;min-width:260px;z-index:300}
+.dropdown a{display:block;padding:7px 20px;font-size:0.82rem;color:var(--g600);text-decoration:none;transition:background .15s,color .15s}
+.dropdown a:hover{background:var(--teal-light);color:var(--teal-dark)}
+.nav-shop{background:var(--teal);color:white;padding:9px 20px;border-radius:6px;text-decoration:none;font-size:0.82rem;font-weight:700;letter-spacing:0.04em;transition:background .2s}
+.nav-shop:hover{background:var(--teal-dark)}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{background:var(--g50);padding:10px 5%;border-bottom:1px solid var(--g200);font-size:0.78rem;color:var(--g400)}
+.breadcrumb a{color:var(--teal);text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+
+/* ── HERO PRODUCT SECTION ── */
+.product-hero{padding:48px 5% 0;max-width:1200px;margin:0 auto}
+.product-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+
+/* Left col */
+.product-left .cat-label{font-size:0.72rem;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:var(--teal);background:var(--teal-light);display:inline-block;padding:4px 12px;border-radius:4px;margin-bottom:14px}
+.product-left h1{font-family:var(--font-d);font-size:clamp(1.5rem,2.5vw,2.1rem);color:var(--navy);font-weight:700;line-height:1.25;margin-bottom:16px}
+.product-left .intro{color:var(--g600);font-size:0.95rem;line-height:1.85;margin-bottom:18px}
+.product-left .intro strong{color:var(--navy);font-weight:600}
+.bullet-list{list-style:none;margin-bottom:24px;display:flex;flex-direction:column;gap:9px}
+.bullet-list li{display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--g600)}
+.bullet-dot{flex-shrink:0;margin-top:5px;width:16px;height:16px;border-radius:50%;background:var(--teal-light);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A7A80' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-size:10px;background-repeat:no-repeat;background-position:center}
+
+.cta-box{background:var(--navy);border-radius:10px;padding:22px 24px;margin-bottom:28px}
+.cta-box p{color:rgba(255,255,255,0.75);font-size:0.88rem;line-height:1.7;margin-bottom:14px}
+.btn-inquire{display:inline-block;background:var(--teal-mid);color:white;padding:12px 28px;border-radius:7px;text-decoration:none;font-weight:700;font-size:0.88rem;letter-spacing:0.03em;transition:background .2s,transform .15s}
+.btn-inquire:hover{background:var(--teal-dark);transform:translateY(-1px)}
+
+/* Right col – images */
+.product-right{display:flex;flex-direction:column;gap:16px;position:sticky;top:90px}
+.main-img-wrap{background:var(--g50);border-radius:12px;overflow:hidden;border:1.5px solid var(--g200);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
+.main-img-wrap img{width:100%;height:100%;object-fit:cover}
+.thumb-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.thumb-wrap{background:var(--g50);border-radius:8px;overflow:hidden;border:1.5px solid var(--g200);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s}
+.thumb-wrap:hover{border-color:var(--teal)}
+.thumb-wrap img{width:100%;height:100%;object-fit:cover}
+/* placeholder when no real image */
+.img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(145deg,var(--teal-light),#c8e8eb)}
+.img-placeholder svg{width:56px;height:56px;stroke:var(--teal);fill:none;stroke-width:1.2;opacity:0.45}
+.img-placeholder span{font-size:0.7rem;color:var(--teal-dark);font-weight:500;text-align:center;padding:0 10px}
+
+/* ── FEATURES + SPECS TABS ── */
+.tabs-section{max-width:1200px;margin:48px auto 0;padding:0 5%}
+.tabs-bar{display:flex;border-bottom:2px solid var(--g200);gap:0}
+.tab-btn{padding:12px 28px;font-size:0.88rem;font-weight:600;color:var(--g400);border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:color .2s,border-color .2s}
+.tab-btn.active{color:var(--teal-dark);border-bottom-color:var(--teal-dark)}
+.tab-pane{display:none;padding:32px 0}
+.tab-pane.active{display:block}
+
+/* Features */
+.features-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.feature-item{display:flex;align-items:flex-start;gap:12px;background:var(--off);border-radius:8px;padding:16px;border:1px solid var(--g50)}
+.f-icon{flex-shrink:0;width:36px;height:36px;border-radius:7px;background:var(--teal-light);display:flex;align-items:center;justify-content:center}
+.f-icon svg{width:18px;height:18px;stroke:var(--teal-dark);fill:none;stroke-width:2;stroke-linecap:round}
+.feature-item p{font-size:0.88rem;color:var(--g600);line-height:1.65}
+.feature-item p strong{color:var(--navy);display:block;margin-bottom:2px;font-size:0.9rem}
+
+/* Specs table */
+.specs-table{width:100%;border-collapse:collapse;font-size:0.88rem}
+.specs-table th{background:var(--navy);color:white;padding:12px 16px;text-align:left;font-weight:600;font-size:0.82rem;letter-spacing:0.05em}
+.specs-table td{padding:11px 16px;border-bottom:1px solid var(--g50);color:var(--g600)}
+.specs-table tr:nth-child(even) td{background:var(--g50)}
+.specs-table tr:hover td{background:var(--teal-light)}
+
+/* Download CTA */
+.download-bar{background:linear-gradient(135deg,var(--teal-dark),var(--teal-mid));border-radius:10px;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;margin-top:28px;flex-wrap:wrap;gap:14px}
+.download-bar p{color:rgba(255,255,255,0.85);font-size:0.9rem}
+.btn-dl{background:white;color:var(--teal-dark);padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.85rem;transition:transform .15s}
+.btn-dl:hover{transform:translateY(-1px)}
+
+/* ── KEY FEATURES IMAGE SECTION ── */
+.key-features{background:var(--off);padding:64px 5%;margin-top:60px}
+.kf-header{max-width:1200px;margin:0 auto 36px}
+.kf-header .section-label{font-size:0.72rem;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:var(--teal);margin-bottom:6px;display:block}
+.kf-header h2{font-family:var(--font-d);font-size:clamp(1.4rem,2.5vw,2rem);color:var(--navy);font-weight:700}
+.kf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto}
+.kf-card{background:var(--white);border-radius:12px;overflow:hidden;border:1.5px solid var(--g50);transition:box-shadow .25s,transform .25s}
+.kf-card:hover{box-shadow:0 8px 32px rgba(26,122,128,0.12);transform:translateY(-4px)}
+.kf-img{aspect-ratio:4/3;overflow:hidden;background:var(--teal-light);display:flex;align-items:center;justify-content:center}
+.kf-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.kf-card:hover .kf-img img{transform:scale(1.04)}
+.kf-img .img-placeholder{aspect-ratio:4/3}
+.kf-body{padding:18px 20px 22px}
+.kf-body h3{font-family:var(--font-d);font-size:1rem;color:var(--navy);font-weight:700;line-height:1.3}
+
+/* ── BRAND BLOCK ── */
+.brand-block{background:var(--navy);padding:56px 5%;margin-top:0}
+.brand-block-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.brand-block h3{font-family:var(--font-d);font-size:1.4rem;color:white;font-weight:700;margin-bottom:12px}
+.brand-block p{color:rgba(255,255,255,0.6);font-size:0.92rem;line-height:1.85;margin-bottom:20px}
+.brand-block .btn-inquire-w{display:inline-block;background:var(--teal-mid);color:white;padding:12px 28px;border-radius:7px;text-decoration:none;font-weight:700;font-size:0.88rem}
+.brand-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.brand-stat{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:20px;text-align:center}
+.brand-stat .bs-num{font-family:var(--font-d);font-size:2rem;color:var(--teal-mid);font-weight:700}
+.brand-stat .bs-lbl{font-size:0.75rem;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px}
+
+/* ── HOSPITALS ── */
+.hospitals-section{padding:64px 5%;max-width:1200px;margin:0 auto}
+.hospitals-section h2{font-family:var(--font-d);font-size:clamp(1.3rem,2vw,1.8rem);color:var(--navy);font-weight:700;margin-bottom:28px}
+.hospital-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hospital-card{background:var(--g50);border-radius:10px;padding:24px 20px;display:flex;align-items:center;justify-content:center;min-height:80px;border:1.5px solid var(--g200);transition:border-color .2s,background .2s}
+.hospital-card:hover{border-color:var(--teal);background:var(--teal-light)}
+.hospital-card span{font-size:0.85rem;font-weight:600;color:var(--g600);text-align:center}
+
+/* ── RELATED PRODUCTS ── */
+.related-section{background:var(--g50);padding:64px 5%}
+.related-inner{max-width:1200px;margin:0 auto}
+.related-inner h2{font-family:var(--font-d);font-size:clamp(1.3rem,2vw,1.8rem);color:var(--navy);font-weight:700;margin-bottom:28px}
+.related-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.related-card{background:var(--white);border-radius:10px;overflow:hidden;border:1.5px solid var(--g200);transition:box-shadow .2s,transform .2s;text-decoration:none}
+.related-card:hover{box-shadow:0 6px 24px rgba(26,122,128,0.12);transform:translateY(-3px)}
+.related-thumb{aspect-ratio:1/1;background:var(--teal-light);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.related-thumb img{width:100%;height:100%;object-fit:cover}
+.related-thumb .img-placeholder{width:100%;height:100%}
+.related-body{padding:12px 14px 16px}
+.related-body h4{font-family:var(--font-d);font-size:0.85rem;color:var(--navy);font-weight:700;line-height:1.35;margin-bottom:6px}
+.related-body .learn{font-size:0.75rem;color:var(--teal);font-weight:600}
+
+/* ── CONTACT FORM ── */
+.contact-section{padding:64px 5%;max-width:1200px;margin:0 auto}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact-left h2{font-family:var(--font-d);font-size:clamp(1.3rem,2vw,1.8rem);color:var(--navy);font-weight:700;margin-bottom:10px}
+.contact-left p{color:var(--g600);font-size:0.9rem;line-height:1.8;margin-bottom:20px}
+.contact-detail{display:flex;gap:10px;align-items:center;margin-bottom:10px;font-size:0.88rem;color:var(--g600)}
+.contact-detail svg{width:16px;height:16px;stroke:var(--teal);fill:none;stroke-width:2;flex-shrink:0}
+.contact-form{background:var(--g50);border-radius:12px;padding:28px;border:1.5px solid var(--g200)}
+.contact-form h3{font-family:var(--font-d);font-size:1.1rem;color:var(--navy);font-weight:700;margin-bottom:20px}
+.form-row{margin-bottom:14px}
+.form-row label{display:block;font-size:0.78rem;font-weight:600;color:var(--g600);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:5px}
+.form-row input,.form-row textarea,.form-row select{width:100%;padding:10px 14px;border:1.5px solid var(--g200);border-radius:7px;font-family:var(--font-b);font-size:0.88rem;color:var(--g800);background:var(--white);outline:none;transition:border-color .2s}
+.form-row input:focus,.form-row textarea:focus,.form-row select:focus{border-color:var(--teal)}
+.form-row textarea{resize:vertical;min-height:90px}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn-submit{width:100%;background:var(--teal-dark);color:white;border:none;padding:13px;border-radius:7px;font-family:var(--font-b);font-size:0.9rem;font-weight:700;cursor:pointer;transition:background .2s;margin-top:6px;letter-spacing:0.03em}
+.btn-submit:hover{background:var(--navy)}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);padding:56px 5% 28px;margin-top:0}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:8px}
+.footer-tagline{color:rgba(255,255,255,0.45);font-size:0.82rem;font-style:italic;max-width:340px;margin-bottom:16px}
+.footer-logo-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer-logo-row img{height:36px;filter:brightness(0) invert(1) opacity(0.85)}
+.footer-logo-row span{font-family:var(--font-d);font-size:1.05rem;color:white;font-weight:700}
+.footer-social{display:flex;gap:10px;margin-top:14px}
+.social-btn{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;transition:background .2s;text-decoration:none}
+.social-btn:hover{background:var(--teal)}
+.social-btn svg{width:15px;height:15px;stroke:rgba(255,255,255,0.7);fill:none;stroke-width:2;stroke-linecap:round}
+.footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px}
+footer h5{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.3);margin-bottom:14px;font-weight:600}
+footer ul{list-style:none}
+footer ul li{margin-bottom:8px}
+footer ul a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.85rem;transition:color .2s}
+footer ul a:hover{color:var(--teal-mid)}
+.footer-contact-info p{font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:7px;display:flex;align-items:flex-start;gap:8px;line-height:1.6}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.footer-bottom p,.footer-bottom a{font-size:0.78rem;color:rgba(255,255,255,0.28);text-decoration:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1000px){
+  .product-hero-inner{grid-template-columns:1fr}
+  .product-right{position:static}
+  .brand-block-inner,.contact-inner{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:repeat(3,1fr)}
+  .features-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .kf-grid{grid-template-columns:1fr 1fr}
+  .hospital-grid{grid-template-columns:1fr 1fr}
+  .related-grid{grid-template-columns:1fr 1fr}
+  .footer-cols{grid-template-columns:1fr 1fr}
+  nav .nav-links{display:none}
+  .form-row-2{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .kf-grid,.related-grid,.hospital-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  Global medical supply since 2002 &nbsp;|&nbsp; <a href="mailto:info@velcura.com">info@velcura.com</a> &nbsp;|&nbsp; +86 139 2376 9489
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCADgANIDASIAAhEBAxEB/8QAHQABAAICAwEBAAAAAAAAAAAAAAcIAQYCAwUJBP/EAEQQAAEDAwEGAwMKBAQEBwAAAAEAAgMEBREGBxIhMUFRCBNhFCJxIzIzUmJygYKRoRUWQpJzorGyFxgkQyZTY7PB4fD/xAAaAQEAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QALBEAAgIBAwQBAgYDAQAAAAAAAAECAwQREjEFEyFBUSKBMkJhYpGhFBUjcf/aAAwDAQACEQMRAD8AuWiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIi66iWKCCSeaRscUbS573HAaBxJJ6BA3oZnmighfNPKyKJjS573kANA5kk8goo1ft90RZZX09vfVXyZhIJo2jys/4jiAfi3KgvbttVumuLlPbbXJLBp2BxbFC126asg/SSdx1Deg4njyjeMuMbQ4YOBkdlYU4aa1mUGX1ZqW2r+Sxf8AzNjzcDRcm5nrcRvY/sW3aN2/aMvc7aa5tqrFO44DqsB0JP8AiNyB+YBVIRpwu7w62vBDh1XIi9W9T6IwSxTQslhkbJG9oc1zTkOB5EHqFzVNdh+1a66Ju8VvucklTpud+7JEXbxpMnhJH6d2/iOPO41LPDVU0dTTyslhlYHxvYctc0jIIPUEKuupdT0Z6DDy45MdVydiIi4ksIiIAiIgCIqueLLbJcKSrl0Ho6rdC9gxdq6B+HsJ/wCwx3Q4+cRxGccOK6V1uyWiON10aY7pEq7Q9uWz/RlVJQVNykuVxjJD6S3sEr2Hs52Q1p9Cc+ijGq8WdKJCKTQ1U+PPB01xaxxHwDD/AKqq8YdufN3T2yu5oOFZQwq0vPko7Op3N/T4LeaX8Uuk66obDfbJdLOHEDzmFtTG347uHfo0qb9MagsuprTHdbDc6a40Uhw2WB4cMjmD1BHUHiF81eK2HZtrnUuz/UbbxYJsMc4e00j3/I1TM8Wvb37OHEfsdLcKOmsDtR1OeulnB9HEWv7PtV2zWukqHUVqc7yKpmXRvI34njg5jsdQcj9+RWwKtaaejLuMlJaoIiLBkIiIAiIgCh3xZ6kls2zb+FUspjnvE3s7i3mIQN6T9cBvwcVMSrf41vM/8MHj5f8A1X64jXbHipWJMh583CiTRXePjG0+gXaOS64/om/ALsCuzx6CIiyZMcRyVmvCRrZ1xstTo64S5qLcTJQlx4vgJ4t/I4/o4dlWZepoq/V+lNT0V+t/Gakn8zczgSMPB7D6EZH79Fwvq7kNCTh5Dx7VL0X/AEXn6du9HfbHR3i3yeZS1kLZondcEZwexHIjuvQVI1oexTUlqgiIhkIiHgEBH3iA16zZ9s4rrtE5huU49mt0Z6zOBw7HZoBcfhjqqAOmmqCZ55HyzSnfkke7LnuPEuJ6kkkqUvFPrx+ttok9HRSb9osu/SUoB92STPysn4kAA9mg9VFcQIiYCOIaFcYlWyGr5Z5vPv7tmi4RyXILGFlSiCZWVhZQFgfBDqmal1hd9JTSuNLXwmrp2k8GzR4DsfeYRn7gVu1RDwlF/wDx4su7n6Oq3vh5L/8A5wr3qnzIpWeD0XTZN0+fQREUUsAiIgCIiAKIPFbpyW97NjcqWMyT2eb2lwAyTCQWyfoCHfBpWfFpq+96O2UOq7BO6lq62tjozUM4PhY5r3OLT0J3MZ6Z4cVE/ha2uXuu1FHorWVwkutFdGOjpJqt3mPjlwT5bnHi5rwCMHODgdVIqrkl3F6IOTbCT7EvZDzOEYz2XYOS23bHpE6I1xW2djXCif8AL0L3cd6FxOBnqWkFv4Z6rUlbwkpRTR5Syt1ycXygiItzUIiIYLA+EnXDo6mp0RcZsskLqi3Fx5EcZIh/vH5lZJfPOzXCttF2p7pQymGqpZ2zQvHRzTkfh0I7Eq9mz3U9HrDSNBf6LAbUx/KR5yYpBwew/Agj9D1VTmVbZbl7PSdJyd8O3LlGwIiKGXAUR+KbaA/ROzmamt1R5V6u+9TUZB96NuPlJR91pwD9ZzVLE8rIYXyyvayNjS5znHAaBzJPZfPzb3rp+0LaBWXene82yBvs1uY7h8k3Pv47udl3wIHRSMaruT88IhZ2R2q9FyzQ2cWA+i7ByC4sGGAHnhc+iukeb1CIshAAmRlOi/ZYLbWXq90lot0fm1lZOyCBndzjgZ9Op9FhvRahJt6InnwQaUnqNU3bWM8JFLRwGip3kcHyvIc/H3WgD86twCDyUB7Ur2zY5svs+idJythuU8RaakNBdG0cZZsH+tzjgZ5ZP1QvH8JWrtQXDU91sFyr6qvo3UprGuqJnSPjk32g4c4k4dvcu4VRbCVutnovse6FEo0eyyiIiilmEREAREQEP+MK1m5bC7rIxu8+hmgqx8GyBrj/AGvKpDaKurt9VTV1FKYaqnlZNBIOBY9pDmn9QF9Hto1mGodC3yx7oc6ut88DAfrOYQ0/rhfNyNr2sDXtLXgYcD0PUKzwnrBxKTqacbFIuJtmo6badsMtevrXBmsoqcVZY3iRGRioi/KWk/kPdVqHLgpr8FWsI5BdNn1yc18UzXVlE15yDnDZo+P4Ox99R7tW0q/ReuK6x7jm0zXebRud/XA7JZx644tPq0rehuEnWyHnQVkI3x9+GaoJGHPvDhzzwX73Wm6tovbnWq4NpOfnmleI8d97GFMvhX0LbLpJX6zvdPFPBQzeTRsmAMbXgBz5CDwOAQBnlxPMBbBH4mtLy62NoktcrbC6XyRdTJw548wx7v0frnOOOOizPIluaitdDSnBjKCnZLTXgrZvtAzkYK5KcfErs1pLQI9ZabpmR22ocG1sMIHlxPd82VoHANdyPTOO6g0FdqrFZHVES+iVE9kgVMvhP1m6y6nn0xXzYortIXU+8eEdQBwA7b7Rj4tb3UNFZgkmp5mTU8jopY3iSORhw5jgcgj1B4pbWrI7Rj3OmxTR9E0WmbG9ZRa30PR3Zxa2tYPIrox/RM0DPDseDh6OC2i83CjtNqqrpXztgpKSF000jjwaxoJJ/QKjcWnoz2ULIzgprggzxna/ksGimaQtU+5c74xwnc08YqUcHf3n3fhvqncIPksz9Uf6LYtqGra3XWt7lqWrDmipfinicfoYW8I2fgOfqSeq16IERtB54CusepVw0PN5d7us19HJYDm5I3hkcwsqRPD7s5ftF1x7LVMkbZaACa4ysyMj+mIHo55B+ADj2XWc1COrONdbskoxNRsumtR3unfUWawXW5Qxkh8lJSSStae2WgjPovOqopaSeSCrhlp5ojiSKVha9h7Fp4gq6O0fa7ZNnFfTaT09Y4Kt1HG0TRRyCGGlbjIYMNOXY446ZGeJXkbdrBYNp+xkbQrNTNZcqGmNVHIGgSOiYT5sMmOe7hxHYt4cCVEjlS1TkvDJksODTUJayRUEEOaC08DyVgfBfo4V2p7hrWtiHstqaaeke4cDO9vvu/Kw4/P6KArdBNW11Nb6ON1RVVMrYYImDLpHuOGgfiQria+ZDsi8PdLpi2yNFwq2CkMreBfJIC6eX9N4Dtlq2yZ6pQXLNMSCi3bLiJBW2HVDtY6+ul2ZKXUnmeRRg8hCzg0j4nLvzKUfBhQOdetRXNzeEdPDTh3q5znEf5QoBGN3hwVsfCLavYtm89xePfuNfJI0/YYAwfu1y1yUoVaGmA3blbn/AOkzoiKqPThERAEREBhwyvnntt0//K+1fUVpazcgbVmeAdPKl+Ubj4b2PwX0NVT/ABy6bNPebJq6GPEdTE6gqXAcA9mXx5+ILx+VSsOe2zT5K/qVW+rX4K/aPvtw05qC36gtb9yropxNETydg8Wn0Iy0+hKt1thtFFtY2SW3XOmYzLWU0HtMUbRl74z9LCcc3NIPDu0gc1TSL6JvwU4+FLae3SN+fpi91G5YrnKDHLI7DaSoOACezH8AexAPdTciD8TjyirxbIvWqfDJS2DPNX4b9RU1CSalra+MY577ost/3BU+jd7gI5YC+huj9IM0tqi+yWxjG2a8FtX5A4CnqBkSAD6rwQfQtI5YVJ9t+j36G2jXWzeWWUTn+00LiODoHkloH3Tln5VyxbFKcv1O2ZTKNUNfXgnnwsbRKLVGnJNmeqCyolip3R0XnnIqqbGDEc83MHLu37pUb7ZtntZoG/mFokmtFS4uoal3HI5+W4/XaP1HHuBDtprqy311PcaCplpqqnkbLDNE7dexwOQQVcTZRtJ01tk0tJo7WdPTxXsx4khPuNqsD6aA82vHMtHEdMjltNSonvjw+TRbcuvtzeklwysIc0jORxXJSLta2TX3Q88lbC2S5WMnLKxjfehHQSgfN+980+nJRwXtDckgBSoTjNaoqbap1S2zRJ3hs1m7Smu20dbNuWy7uFNNk+7HJn5KT04ndPo7PRbj419eOprTT6Btk2Jaxgqbi5p5RA+5GfvOGSOzR3UAtPNeZretuFyvEt1uNXLWVVUB5k0rsuJa0NA/BoGFxljxlYpkyjNlGl1HhszuNzzwuwHAHELraRjmtp2c6F1Jry8/w3T1A6bdcBPUyZbBTg9Xv6fAZJ6BSJSUVqznGLm9Io8/R1gumq9QUtjsdK6qrap+6xv9LR1e49GgcSf/AKVyJf4DsB2RMoqMsqrpLvbhdwdWVTh70hHRjeHDo0Aczx46dsmhvD/ot9XWVAqrvVNxLNuj2iseOO5G3+lgPTkOZJKrftJ1jd9cahmvFxO7kblPTtPuU8eeDR/qT1P4KD5yJftRPlKOFD97/o8G4VtVX1tRX1s76ipqJXSyyv8AnPe4kk/qVZ3YWRD4bLxLW4FN5dwcN7l5e4c/uHKsNspqi4VtPQUULpqqolbDFGBxc9xwB+pVzLvoGr/4N0+zyz1DKcTwxUdXV9WROcDUSAdXOG+AO7h2TLkklE16ZCU5yn+hAngw2fG5X6XX90gxRWwGG3744PnI99/wY04+Lu7V5+37W38564kdRzb9pt4NPR4Puv4+/J+Yjh6AKUNvGqbZoDQtLsz0gG00z6YRS+W7jTU/XJ+vJx488Fx6hVtxwGFvTFzl3H9jnnWquCoj9zri3nRt907x/p657K+2zSx/y7oKy2Zzd2SmpGNlH/qEZf8A5iVT7YZYRqTajZ7e9m/BBMauoBGRuRe9x9C7dH4q8g4Bcc2flRJXR6vErGERFALwIiIAiIgC0Pb1pA632X3iyQxh9aIvaKLv58fvNA+OC34OK3xCMhZi9r1RrOKlFxZ8vQd1oyC0jgQeYXNpIzwBB6HqpZ8Vuhv5P2iTXGlh8u1XveqoN0e6yXPy0f8AcQ4ej8dFErfmj4K+rkpxTR5S2t1TcWWQ8O23wWynp9Ka8qHCjjxHRXR5J8lvIRzHnu9A/pyPDipN8TWztu0LQbLnZWMnvFsYaijMfH2mJwy+IEc8gAt9QO5VIwSHKR9ku2PVmz2dtNTyC5WQuzJbqh53Wjr5TuJjPpxb6Z4qJZjNS318k6nMUodu3j5I2GGt7Ad1zpZqinnZUQPMUkbg9j2PLXNI5EEcQfULbdrl50xqPVs9+0vRVlvhuDfOq6SoY0CGoJ98sLSQWu+d0wSfw1ADgpcfqXlECS2y0TLG7H/EbUUzIrFtEjdW0b/k23NrN6RjeXyzAPfHdw49w7mtq2nbGLRqC1fzXs2kpntnZ53scDwYKhvPMJ5NP2fmn0VSeIORhSNsQ2q3rZxemsDpa2w1Emayg3s4zzkiz8147cncj0IjWUOD31kuGRG1du/yvn4PDqWPpZpIKlj4ZY3FkjJGlrmOBwQQeII7L89XEyrpXMDm8eLXHoQrL+ITRFp1bpKPaXpIx1D/AGds9SYBkVUGPpMfXYOfXAIPFoWieGzZ5Dq/UUl2u0Iks1rc0ujc33KiY8WsPdoHvEfdHIraORHZuZGlhTjcq174f6Hm7Cdgdy1hHDfNUCe1WHnHFjdqKwd2/UZ9rmeg/qUt622qaT2bWr+UtntsopqmmBZiEYpqd3UucOMj+/HnzdngtW8Qe12rrquo0lpGrNPb4CYqyshdh07hwMbHDkwciR87ly5wV0xgAdlpGqVz3WcfB3uyo467dPPtn79TX69akust1vNbLW1cnN8h4NHRrQODW+gwF54zgcOKyv1WdtA67UrbrJPHQec32l8DcyCPPvbo744fipWiivBV7nJ6tk4eE/Z++or366ucP/TwOfHbGuHz3nIfL8BxaPXe7Bb9to2x27SMM9nsL4a+/wCC1wzvRUh7v7u7M/XHWIde7brxX21mn9E0n8uWWGIQsc0j2lzRwABHCMY7ZP2lEpLnZJzknJJOST3UNY7slvsLSWbGivtU8+2d1xrq25109wr55KirqHmSWWV2XPceZK6gcjHVF6ujbHVan1NRWC3camrmEecZEbebnn0a3J/BTG1FFWlKctPbLA+EHSppbXc9XVEWH1zhS0pI/wC0w++4ehfw/Ip/X4NO2mjsVjorPb4/LpaOFsMbfQDGT6nmfVfvVJbPfJyPZY1KpqUAiIuZ3CIiAIiIAiIgNH23aCpdomgqyxSFkVY35agncPop2g7pP2TktPo4qgF1oay0XCotlzpn0tZSSGKeF495j28CP/3NfTdV38W+yo3q3Sa6sFMXXSjixcIY25NRA0fPAHN7B+rfugKZiX7HtfBWdQxe5HfHlFSGkEAjqsrgwgMGDwxzXNWyKExxWURDAQZ6IiAsv4LdamSa5bPri8SU72Pq6FrzkDiBNHjsch2Pv91IG0w2/ZBsWqLRp1z4Zq6okgpnk++HSlznuz9lgLQfRqqLsz1HLo7Xtp1K3e3KKsD5mt5uhd7sg/sc79laLxh0NRctFWO/W/NTQ007vMdHxbuysG4/4ZAGftjuq22tK5fDLaq5vFk1+JFZxjdGOWOC5YXBn0bc9l2KxRQGAFhclhZMGQhRcTIzj7w4c/RYBgSMOcOHA4KtX4YNnUunbTJqm8U5julxZiCJ7cOgg58eznHBPYADutV8O+x59TLT6v1ZSOZTtIkt9DK3BkPMSyNPTq1p58zwxmy3JVmVkbvoieg6ZguP/Wf2CIigl4EREAREQBERAEREAWC0HmsogKb+KTZCdKVs+rtO0w/gFU/NVBG3hRSuPMDpG4/2k45EKBw4Bozw+K+nNfR01fRzUdZBHUU87DHLFI0OY9pGCCDzBCpX4i9js+gJ33yyslqNNzPwCcudROPJjz9Qng1x+B44JssXJ1WyRR52FtfchwQ4i4McN0cVzVgVQREQwceI4YyrWeF/W1u1joqo2W6ocJZ4ad0dL5jsGopcfNB578fT7IaR80qqq7rfWVdvr4K+gqZqWrp5BJDNE7dex45EEciuN1Xcjp7JGPf2Za+vZKe1bZ/eNBXt1PWMknt8ryaSuDfcmb0B+q8Dm38RkLTDNEOb/wBirBbM/EDp3UtpGm9qVLSxSSNEb6ySEOpKj/Ebg+W71xu9ct5LZrnsL2eanh/iOlbw+jjfxa6jqG1NP+hJP6OC4RyHX9NiN7Onq366Hqvgqt50X1/2KefF9f8AYqxrfDL8p72sfc9Lfx/9xepTbCtnWmIf4hq3UM08TDkmpqWUsJ9DjB/zLZ5dfo4rpl75Wn3K46dsl11FcWUFjt9RX1T/AOiFud0d3Hk0epwFZXY7sLpLFLFetXNgrrkwh8NI33oID0Ls/Pd+w9ea5WTafpFt3j0Psc05Fdq+TjJPDCYKGmaOBlmkxvPA9Ad7kDkqY7TTVNLRRx1lY6sqMZllLQ0Ocee60fNb2HHhzJPFRL8mcvHBa4XTqoPc3uf9H7McERFDLgIiIAiIgCIiAIiIAiIgCIiALouFFS3Cimoq6niqaadhjlhlaHMe0jBBB4ELvRByUv8AEJsNrdGmo1BpmOWs04cvliGXy0A5nPV0XZ3NvXuoP32hoJPMZC+n0jGyMLHtDmuGCCMgjsq17d/DxFVMn1DoCmZBUDL6i0t91kvcw9Gu+xyPTHI2OPl/lmUuX0/89f8ABVYEEZHIrKzWRy0NRLS1sMtNPC8xyxSsLXscOYcDxB9CuAc0gEEYPJWHJUNaHJAiLJgwOHDC7aGvr7fP5tBLUUkn/mU85jd+oIK6sjuuJkZx48uaxonyZTafg99+vdcGLyjq3UZYBjd/iU2P9y9TZvo3V20/UfsdAZ5twg1dwqnmSOnaernE5Lj0aDk/Ditw2FbCrxrmaK83xtRatO728Hlu7NVjtGDyb9sj4Z5i5OldO2XS1mhs9gt8FBRRfNjibzPVzjzc49SckqFfkRr8Q5LTFw53fVZweLsr2eaf2d6eFrssG9NJh1XWSAebUv7uPYdG8gPxJ29EVY25PVl3GKitEERFg2CIiAIiIAiIgCIiAIiIAiIgCIiALBHFZRAR9tU2Q6P2hwukutGaW5hu7HcaXDJh2Duj2+jgfTCrJr3w66+06581phi1HQt4h9J7kwHrE48/ulyu4hGeq715E6+CJfh1XeWvJ8y7ra7pa5nQ3S119BI04LKmmfEf8wC6aSnqKuQR0lNPUvPJsMTnk/gAvpu+Jr27rwHDsQCFiOCOMYjYxg+y0BSP896cEP8A1K1/EUJ0bsV2kanlaafTtRbqdxGam5A07AO+6ffP4NKsVss8Oel9MzRXPUcjdQ3NmHNbJHu00TvSM53z6uz8ApvAx1WVxsyrJ+OCTTgVVPXlmGtDWgNAAHIDosoijE4IiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiA/9k=" alt="Velcura Logo">
+    <div class="logo-text">
+      <div class="brand">Velcura</div>
+      <div class="sub">Medical Technology</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#">Products ▾</a>
+      <div class="dropdown">
+        <a href="#" style="font-weight:700;color:var(--teal-dark);font-size:0.78rem;padding:10px 20px 4px;letter-spacing:0.08em;text-transform:uppercase">Advanced Wound Dressings</a>
+        <a href="#">Nano-Silver Medical Antibacterial Dressing</a>
+        <a href="#">Hydrogel Dressing</a>
+        <a href="#">Calcium Alginate Dressing</a>
+        <a href="#">Silver Alginate Dressing</a>
+        <a href="#">Foam Dressing Non-Adhesive</a>
+        <a href="#">Silicone Foam Dressing</a>
+        <a href="#">Hydrocolloid Dressing</a>
+        <a href="#">Biocellulose Dressing</a>
+        <a href="#" style="font-weight:700;color:var(--teal-dark);font-size:0.78rem;padding:10px 20px 4px;letter-spacing:0.08em;text-transform:uppercase">Traditional Wound Dressing</a>
+        <a href="#">Surgical Tape</a>
+        <a href="#">Non-woven Adhesive Wound Dressing</a>
+        <a href="#" style="font-weight:700;color:var(--teal-dark);font-size:0.78rem;padding:10px 20px 4px;letter-spacing:0.08em;text-transform:uppercase">Personal Care</a>
+        <a href="#">Hydrocolloid Gel Bandages</a>
+        <a href="#">Silicone Scar Sheet</a>
+      </div>
+    </li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Become a Distributor</a></li>
+  </ul>
+  <a href="#" class="nav-shop">SHOP AT HOME</a>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="#">Home</a> &rsaquo; <a href="#">Products</a> &rsaquo; <a href="#">Advanced Wound Dressings</a> &rsaquo; Nano-Silver Medical Antibacterial Dressing
+</div>
+
+<!-- ── PRODUCT HERO ── -->
+<div class="product-hero">
+  <div class="product-hero-inner">
+
+    <!-- LEFT: Info -->
+    <div class="product-left">
+      <div class="cat-label">Advanced Wound Dressing</div>
+      <h1>Velcura&reg; Nano-Silver Medical Antibacterial Dressing</h1>
+      <p class="intro">
+        <strong>Nano-Silver Medical Antibacterial Dressing</strong> provides strong <strong>antimicrobial protection</strong> to help reduce infection risk and support faster healing. Infused with <strong>nano-silver particles</strong>, it delivers long-lasting antibacterial action while maintaining a moist wound healing environment. Suitable for <strong>chronic wounds, surgical incisions, and burns</strong>, this dressing promotes optimal recovery and patient comfort.
+      </p>
+      <ul class="bullet-list">
+        <li><span class="bullet-dot"></span><span>Nano-silver for antimicrobial protection</span></li>
+        <li><span class="bullet-dot"></span><span>Reduces infection risk, supports healing</span></li>
+        <li><span class="bullet-dot"></span><span>Maintains moist wound environment</span></li>
+        <li><span class="bullet-dot"></span><span>Suitable for chronic, surgical, and burn wounds</span></li>
+      </ul>
+
+      <div class="cta-box">
+        <p>To place an order or to receive a consultation about our products, please contact us. We are always happy to answer your questions and help with selecting the best products.</p>
+        <a href="#CONTACT" class="btn-inquire">Inquire This Product</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Product Images -->
+    <div class="product-right">
+      <div class="main-img-wrap">
+        <div class="img-placeholder">
+          <svg viewBox="0 0 60 60"><rect x="8" y="8" width="44" height="44" rx="6"/><path d="M8 22h44M22 8v44"/><circle cx="30" cy="30" r="8"/></svg>
+          <span>Nano-Silver Dressing<br>Product Packaging</span>
+        </div>
+      </div>
+      <div class="thumb-row">
+        <div class="thumb-wrap">
+          <div class="img-placeholder">
+            <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="18"/><path d="M20 30h20M30 20v20"/></svg>
+            <span>Product View</span>
+          </div>
+        </div>
+        <div class="thumb-wrap">
+          <div class="img-placeholder">
+            <svg viewBox="0 0 60 60"><rect x="10" y="18" width="40" height="28" rx="4"/><path d="M10 30h40"/><circle cx="30" cy="24" r="4"/></svg>
+            <span>In Use</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── TABS: FEATURES + SPECS ── -->
+<div class="tabs-section">
+  <div class="tabs-bar">
+    <button class="tab-btn active" onclick="switchTab(this,'features')">Product Features</button>
+    <button class="tab-btn" onclick="switchTab(this,'specs')">Technical Specs</button>
+    <button class="tab-btn" onclick="switchTab(this,'download')">Downloads</button>
+  </div>
+
+  <div id="features" class="tab-pane active">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <p><strong>Continuous Antimicrobial Protection</strong>Nano-silver particles provide broad-spectrum, long-lasting antibacterial action against common wound pathogens.</p>
+      </div>
+      <div class="feature-item">
+        <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg></div>
+        <p><strong>Reduces Risk of Infection</strong>Effectively inhibits bacterial growth, minimizing the risk of wound infection and promoting a clean healing environment.</p>
+      </div>
+      <div class="feature-item">
+        <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M20 14.66V20a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg></div>
+        <p><strong>Maintains Moist Environment</strong>Supports a balanced moist wound-healing environment to accelerate tissue regeneration and reduce scarring.</p>
+      </div>
+      <div class="feature-item">
+        <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <p><strong>Gentle and Non-Adherent</strong>Soft, atraumatic design ensures painless removal without damaging new tissue or causing patient discomfort.</p>
+      </div>
+      <div class="feature-item">
+        <div class="f-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <p><strong>Wide Clinical Application</strong>Suitable for chronic wounds, diabetic ulcers, surgical incisions, burns, and infected wounds requiring antimicrobial management.</p>
+      </div>
+      <div class="feature-item">
+        <div class="f-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <p><strong>Fully Certified</strong>CE marked and ISO 13485 certified. Manufactured in an FDA-registered facility under strict GMP quality standards.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="specs" class="tab-pane">
+    <table class="specs-table">
+      <thead>
+        <tr>
+          <th>REF No.</th>
+          <th>Size (cm)</th>
+          <th>Each Carton / Box</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>247 010</td><td>20 × 25</td><td>10 pcs/box, 10 bx/cs</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="download" class="tab-pane">
+    <div class="download-bar">
+      <p>Download the complete product brochure and case studies from satisfied clients worldwide.</p>
+      <a href="#CONTACT" class="btn-dl">Request Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── KEY FEATURES WITH IMAGES ── -->
+<div class="key-features">
+  <div class="kf-header">
+    <span class="section-label">Key Features</span>
+    <h2>Why Choose Velcura Nano-Silver Dressing?</h2>
+  </div>
+  <div class="kf-grid">
+    <div class="kf-card">
+      <div class="kf-img">
+        <div class="img-placeholder">
+          <svg viewBox="0 0 60 60"><path d="M30 10c0 0-14 8-14 22a14 14 0 0028 0C44 18 30 10 30 10z"/><path d="M24 32c0 0 2 4 6 4s6-4 6-4" stroke-linecap="round"/></svg>
+          <span>Nano-silver antibacterial action</span>
+        </div>
+      </div>
+      <div class="kf-body"><h3>Long-lasting Antibacterial Protection</h3></div>
+    </div>
+    <div class="kf-card">
+      <div class="kf-img">
+        <div class="img-placeholder">
+          <svg viewBox="0 0 60 60"><ellipse cx="30" cy="30" rx="20" ry="12"/><path d="M10 30s8 16 20 16 20-16 20-16"/><circle cx="30" cy="30" r="4"/></svg>
+          <span>Moisture control technology</span>
+        </div>
+      </div>
+      <div class="kf-body"><h3>Moisture Control</h3></div>
+    </div>
+    <div class="kf-card">
+      <div class="kf-img">
+        <div class="img-placeholder">
+          <svg viewBox="0 0 60 60"><path d="M15 40 Q30 20 45 40"/><path d="M20 35 Q30 25 40 35" opacity="0.5"/><circle cx="30" cy="20" r="6"/></svg>
+          <span>Gentle, non-adherent removal</span>
+        </div>
+      </div>
+      <div class="kf-body"><h3>Gentle and Non-Adherent</h3></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── BRAND / COMPANY BLOCK ── -->
+<div class="brand-block">
+  <div class="brand-block-inner">
+    <div>
+      <h3>Velcura&reg; Nano-Silver Medical Antibacterial Dressing</h3>
+      <p>Founded in 2002, Velcura Medical Technology specializes in advanced wound care, offering a comprehensive one-stop solution. Our innovative products provide effective protection, support healing, and meet the needs of hospitals, clinics, and home healthcare worldwide — serving North America, the Middle East, and beyond.</p>
+      <a href="#CONTACT" class="btn-inquire-w btn-inquire">INQUIRE THIS PRODUCT</a>
+    </div>
+    <div class="brand-stats">
+      <div class="brand-stat"><div class="bs-num">100K+</div><div class="bs-lbl">Pharmacies</div></div>
+      <div class="brand-stat"><div class="bs-num">500+</div><div class="bs-lbl">Hospitals</div></div>
+      <div class="brand-stat"><div class="bs-num">400+</div><div class="bs-lbl">R&amp;D Patents</div></div>
+      <div class="brand-stat"><div class="bs-num">80+</div><div class="bs-lbl">Countries</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── HOSPITALS ── -->
+<div class="hospitals-section">
+  <h2>Over 500 hospitals worldwide trust us</h2>
+  <div class="hospital-grid">
+    <div class="hospital-card"><span>Mount Elizabeth Hospital</span></div>
+    <div class="hospital-card"><span>Singapore General Hospital</span></div>
+    <div class="hospital-card"><span>Hospital Umum Sarawak</span></div>
+    <div class="hospital-card"><span>Zhejiang Hospital</span></div>
+    <div class="hospital-card"><span>Henan Provincial Hospital</span></div>
+    <div class="hospital-card"><span>Xijing Hospital</span></div>
+  </div>
+</div>
+
+<!-- ── RELATED PRODUCTS ── -->
+<div class="related-section">
+  <div class="related-inner">
+    <h2>Related Products</h2>
+    <div class="related-grid">
+      <a href="#" class="related-card">
+        <div class="related-thumb"><div class="img-placeholder"><svg viewBox="0 0 60 60" style="width:36px;height:36px"><rect x="10" y="10" width="40" height="40" rx="6"/><path d="M10 25h40M25 10v40"/></svg></div></div>
+        <div class="related-body"><h4>Velcura&reg; Calcium Alginate Dressing</h4><div class="learn">Learn more ›</div></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb"><div class="img-placeholder"><svg viewBox="0 0 60 60" style="width:36px;height:36px"><circle cx="30" cy="30" r="20"/><path d="M20 30h20M30 20v20"/></svg></div></div>
+        <div class="related-body"><h4>Velcura&reg; Silver Alginate Dressing</h4><div class="learn">Learn more ›</div></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb"><div class="img-placeholder"><svg viewBox="0 0 60 60" style="width:36px;height:36px"><rect x="8" y="18" width="44" height="28" rx="6"/><path d="M8 30h44"/></svg></div></div>
+        <div class="related-body"><h4>Velcura&reg; Foam Dressing Non-Adhesive</h4><div class="learn">Learn more ›</div></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb"><div class="img-placeholder"><svg viewBox="0 0 60 60" style="width:36px;height:36px"><rect x="8" y="18" width="44" height="28" rx="6"/><path d="M20 18v28M40 18v28"/></svg></div></div>
+        <div class="related-body"><h4>Velcura&reg; Foam Dressing Silicone Adhesive Border</h4><div class="learn">Learn more ›</div></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb"><div class="img-placeholder"><svg viewBox="0 0 60 60" style="width:36px;height:36px"><ellipse cx="30" cy="30" rx="22" ry="16"/><ellipse cx="30" cy="30" rx="14" ry="8"/></svg></div></div>
+        <div class="related-body"><h4>Velcura&reg; Hydrocolloid Dressing</h4><div class="learn">Learn more ›</div></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── CONTACT / SAMPLE REQUEST ── -->
+<div class="contact-section" id="CONTACT">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <h2>Request a Product Sample</h2>
+      <p>Interested in evaluating Velcura products? Contact our team to request samples, receive technical consultations, or discuss distribution partnerships. We're always ready to help.</p>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.93 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.83 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +86 139 2376 9489
+      </div>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@velcura.com
+      </div>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        806, Finance Center, No.22 TaiziRoad, NanShan District, Shenzhen, Guangdong
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Request a Product Sample</h3>
+      <div class="form-row-2">
+        <div class="form-row"><label>First Name</label><input type="text" placeholder="John"></div>
+        <div class="form-row"><label>Last Name</label><input type="text" placeholder="Smith"></div>
+      </div>
+      <div class="form-row"><label>Company / Hospital</label><input type="text" placeholder="Your organization"></div>
+      <div class="form-row"><label>Email Address</label><input type="email" placeholder="john@example.com"></div>
+      <div class="form-row"><label>Phone</label><input type="tel" placeholder="+1 000 000 0000"></div>
+      <div class="form-row"><label>Country</label><input type="text" placeholder="Your country"></div>
+      <div class="form-row"><label>Product of Interest</label><input type="text" value="Nano-Silver Medical Antibacterial Dressing" readonly></div>
+      <div class="form-row"><label>Message</label><textarea placeholder="Please describe your needs, quantities, or any questions..."></textarea></div>
+      <button class="btn-submit" onclick="alert('Thank you! We will contact you shortly.')">Submit Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo-row">
+        <img src="data:image/png;base64,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" alt="Velcura">
+        <span>Velcura</span>
+      </div>
+      <div class="footer-tagline">Empowering Healing, Nurturing Health: Your Partner in Care.</div>
+      <div class="footer-social">
+        <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+        <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" class="social-btn"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-cols">
+    <div>
+      <h5>Our Products</h5>
+      <ul>
+        <li><a href="#">Advanced Wound Dressings</a></li>
+        <li><a href="#">Traditional Wound Dressings</a></li>
+        <li><a href="#">Personal Care</a></li>
+        <li><a href="#">Medical Tapes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Our Company</h5>
+      <ul>
+        <li><a href="#">About Velcura</a></li>
+        <li><a href="#">Become a Distributor</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact-info">
+      <h5>Get in Touch</h5>
+      <p>806, Finance Center, No.22 TaiziRoad, NanShan District, Shenzhen, Guangdong</p>
+      <p>+86 139 2376 9489</p>
+      <p>info@velcura.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Velcura Medical Technology (Shenzhen) Co., Ltd. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+function switchTab(btn, id) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>
